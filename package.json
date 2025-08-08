@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build && workbox generateSW workbox-config.js",
+    "build": "npx vite build && npx workbox generateSW workbox-config.js",
     "preview": "vite preview",
     "lint": "eslint ./src --ext .js,.jsx",
     "test": "jest",
