@@ -2,7 +2,7 @@ name: Deploy Portfolio
 on:
   push:
     branches:
-      - main
+      - gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,7 +19,9 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build
+        env:
+          PATH: ${{ github.workspace }}/node_modules/.bin:${{ env.PATH }}
+        run: echo           npx vite build echo           npx workbox generateSW workbox-config.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
