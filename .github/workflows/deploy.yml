@@ -4,6 +4,7 @@ on:
     branches:
       - main
 jobs:
+   
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -18,8 +19,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+                
+
       - name: Build project
-        run: npm run build
+          run: |
+        npm install -g vite
+        npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
