@@ -1,1 +1,0 @@
-          NavLink to="/contact" className={({isActive}) = ? 'text-brand font-bold' : 'text-white/70'}>Contact</NavLink>
