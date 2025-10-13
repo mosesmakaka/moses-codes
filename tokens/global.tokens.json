@@ -1,0 +1,12 @@
+{
+  "color": {
+    "primary": { "value": "#1a73e8" },
+    "secondary": { "value": "#e37400" }
+  },
+  "font": {
+    "body": { "value": "Roboto, sans-serif" }
+  },
+  "size": {
+    "borderRadius": { "value": "0.5rem" }
+  }
+}
