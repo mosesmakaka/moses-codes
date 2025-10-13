@@ -30,6 +30,7 @@ export default defineConfig({
         ]
       }
     })
+      base: '/moses-codes/',
   ],
   resolve: {
     alias: {
